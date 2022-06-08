@@ -6,7 +6,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 console.log(galleryItems);
 const gallery = document.querySelector(".gallery");
-
+createGallery();
 function createGallery() {
     const imgs = [];
     galleryItems.forEach(event => {
@@ -24,7 +24,7 @@ function createGallery() {
     });
     gallery.append(...imgs);
   }
-createGallery();
+
 
 new SimpleLightbox('.gallery a', {
     captionDelay: 250,
